@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="shortcut icon" href="/img/bookmark.png" type="image/x-icon">
+    <link rel="stylesheet" href="/dependencies/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    
+    <div class="head">
+        <h1>Bookmarker</h1>
+    </div>
+  <hr class="dotted-line">
+    <div class="fav d-flex translate-middle-y  justify-content-center">
+        <i class="pe-3 fa-solid fa-bookmark bookmarka"></i>
+        <h2 class="text-center">Bookmark your favorite sites</h2>
+        <i class="fa-solid  fa-bookmark bookmarkb ps-3"></i>
+    </div>
+
+    <div class="container">
+        <div class="sitename">
+            <div class="mb-4">
+        <i class="fa-solid fa-book-bookmark"></i>
+        <label for="siteName" class="form-label fw-bold ps-2">Site Name</label>
+
+        <div class="position-relative">
+            <input type="text" oninput="validateName()" class="form-control pe-5" id="siteName" placeholder="Bookmark Name">
+            <i id="correct"></i>
+            <i id="notCorrect"></i>
+        </div>
+    </div>
+
+    <div class="siteUrl">
+        <div class="mb-3">
+            <i class="fa-solid fa-link"></i>
+            <label for="exampleFormControlInput1" class="form-label fw-bold ps-2">Site URL</label>
+            <input type="url" class="form-control" oninput="validateUrl()" id="siteUrl" placeholder="Website URL">
+        </div>
+    </div>
+    <button class="btnn" onclick="handle()">
+        Submit
+    </button>
+    </div>
+
+    <hr class="dotted-line mt-5">
+<div class="container">
+    <div class="out">
+        <table class="mt-4 text-center bg-light w-100">
+            <thead>
+                <tr class="border-bottom">
+                    <th class="p-2">Index</th>
+                    <th class="p-2">Website Name</th>
+                    <th class="p-2">Visit</th>
+                    <th class="p-2">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="siteTable"></tbody>
+        </table>
+    </div>
+</div>
+
+
+<div id="errorModal" class="modal-overlay d-none">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="red-circle"></span>
+      <span class="yellow-circle"></span>
+      <span class="green-circle"></span>
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+    </div>
+    <div class="modal-body">
+      <h5><strong>Site Name or URL is not valid</strong></h5>
+      <p>Please follow the rules below:</p>
+      <p class="pt-3">🔴 Site name must contain at least 3 characters</p>
+      <p>🔴 Site URL must be a valid one</p>
+      
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="/dependencies/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
