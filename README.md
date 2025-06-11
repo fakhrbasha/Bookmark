@@ -13,4 +13,4 @@
   <li>Validation RegExp</li>
 </ul>
 
-<h3>Demo : </h3> <a href = "https://fakhrbasha.github.io/Bookmark/" target="_blank" >Here</a>
+<a href = "https://fakhrbasha.github.io/Bookmark/" target="_blank" >Demo</a>
