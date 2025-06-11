@@ -4,7 +4,7 @@
   <li>CSS</li>
   <li>JS</li>
 </ul>
-<br>
+<hr>
 <ul>
   <li>Add Name Site</li>
   <li>Add URL Site</li>
