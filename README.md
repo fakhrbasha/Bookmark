@@ -4,12 +4,12 @@
   <li>CSS</li>
   <li>JS</li>
 </ul>
-
+--------------
 <ul>
-  <li>Add NAme Site</li>
+  <li>Add Name Site</li>
   <li>Add URL Site</li>
-  <li>Visit URL Site</li>
-  <li>VDelete URL Site</li>
+  <li>Visit Site</li>
+  <li>Delete Site</li>
   <li>Validation RegExp</li>
 </ul>
 
