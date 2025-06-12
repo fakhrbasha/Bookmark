@@ -81,6 +81,7 @@ function validateUrl(){
 
     var inp = document.getElementById('siteUrl');
     if(reg.test(inp.value) == true){
+                        // bootstrap class
         inp.classList.add("is-valid");
         inp.classList.remove("is-invalid");
     }else{
